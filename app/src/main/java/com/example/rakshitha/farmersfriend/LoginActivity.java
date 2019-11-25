@@ -77,9 +77,11 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private ProgressDialog mProgressDialog;
     private String userName,userMobileNumber;
     FirebaseAuth mAuth;
+    TextView adminLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         // Set up the login form.
@@ -100,7 +102,16 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         });
 
         Button mSignInButton = (Button) findViewById(R.id.email_sign_in_button);
-        mSignInButton.setOnClickListener(new OnClickListener() {
+        Button mSignUpBUtton = findViewById(R.id.signup);
+        adminLogin=findViewById(R.id.adminlogin);
+        adminLogin.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(LoginActivity.this,HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+        mSignUpBUtton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -133,6 +144,14 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                     }
                 }
 
+            }
+        });
+
+        mSignInButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(LoginActivity.this,HomeActivity.class);
+                startActivity(intent);
             }
         });
 

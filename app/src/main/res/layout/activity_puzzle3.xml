@@ -5,11 +5,11 @@
     android:layout_height="match_parent">
 
 
-<ImageView
-    android:layout_marginLeft="40dp"
-    android:layout_width="300dp"
-    android:layout_height="300dp"
-    android:src="@drawable/q1"/>
+    <ImageView
+        android:layout_marginLeft="40dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/q3"/>
 
     <EditText
         android:textSize="24sp"
