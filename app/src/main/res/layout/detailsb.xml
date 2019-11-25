@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Time"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:gravity="start"/>
+    <EditText
+        android:layout_below="@+id/item_description"
+        android:id="@+id/item_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Price"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        />
+    <Button
+        android:layout_below="@+id/item_price"
+        android:id="@+id/add_event_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ADD ITEM"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+</RelativeLayout>

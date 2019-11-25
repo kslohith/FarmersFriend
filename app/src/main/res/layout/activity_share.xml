@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShareActivity">
+
+
+    <ImageView
+        android:id="@+id/s1"
+        android:layout_width="157dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/s2"
+        android:layout_marginEnd="19dp"
+        android:src="@drawable/trac" />
+
+    <ImageView
+        android:id="@+id/s2"
+        android:layout_width="151dp"
+        android:layout_height="200dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/plough" />
+
+    <ImageView
+        android:id="@+id/s3"
+        android:layout_width="162dp"
+        android:layout_height="200dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/s4"
+        android:layout_marginEnd="14dp"
+        android:src="@drawable/harvestor" />
+
+    <ImageView
+        android:id="@+id/s4"
+        android:layout_width="156dp"
+        android:layout_height="200dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="74dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/drag" />
+
+
+    <ProgressBar
+        android:id="@+id/upload_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
+
+
+

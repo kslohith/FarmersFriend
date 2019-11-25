@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "87707392296",
+    "firebase_url": "https://farmersfriend-857c9.firebaseio.com",
+    "project_id": "farmersfriend-857c9",
+    "storage_bucket": "farmersfriend-857c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87707392296:android:9f69239e33be0a9f",
+        "android_client_info": {
+          "package_name": "com.example.rakshitha.farmersfriend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87707392296-bsk2e7fkn9jeffc8fof040h9ohrahh4l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rakshitha.farmersfriend",
+            "certificate_hash": "b9cb2f326af078548e84759e55f5722288708062"
+          }
+        },
+        {
+          "client_id": "87707392296-u3ribck6g2sgm96opjpi3c7t6lks092u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiF5pedEBp1plCFqOamC7aYmtcxH8Nev0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87707392296-u3ribck6g2sgm96opjpi3c7t6lks092u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

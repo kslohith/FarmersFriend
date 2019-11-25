@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/soil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Soil Moisture"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:gravity="start"/>
+    <EditText
+        android:layout_below="@+id/soil"
+        android:id="@+id/nitrogen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter nitrogen Percentage"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:gravity="start"/>
+    <EditText
+        android:layout_below="@+id/nitrogen"
+        android:id="@+id/phosphorous"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter phosphorous Percentage"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:gravity="start"/>
+    <EditText
+        android:layout_below="@+id/phosphorous"
+        android:id="@+id/potassium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Potassium Percentage"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:gravity="start"/>
+    <EditText
+        android:layout_below="@+id/potassium"
+        android:id="@+id/dry_matter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Dry Matter Percentage"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:gravity="start"/>
+    <Button
+        android:id="@+id/Predict"
+        android:layout_below="@+id/dry_matter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="Predict"/>
+
+</RelativeLayout>
