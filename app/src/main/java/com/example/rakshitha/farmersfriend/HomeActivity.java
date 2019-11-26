@@ -57,31 +57,7 @@ public class HomeActivity extends AppCompatActivity
 
 
         item_list = new ArrayList<>();
-        item_list.add(
-                new Farmers(
-                        "Tractor",
-                        "For 30 days",
-                        "5000",
-                        "https://5.imimg.com/data5/OO/RY/MY-45687661/5042-d-john-deere-tractor-500x500.jpg"
-                ));
 
-        item_list.add(
-                new Farmers(
-                        "Harvestor",
-                        "For 20 days",
-                        "2000",
-                        "https://5.imimg.com/data5/OY/UD/MY-381517/kartar-tractor-combined-harvester-500x500.jpg"
-
-                ));
-
-        item_list.add(
-                new Farmers(
-                        "Plough",
-                        "For 10 days",
-                        "1000",
-                        "https://4.imimg.com/data4/DR/DY/MY-14166347/tractor-plough-250x250.jpg"
-
-                ));
         mDatabaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

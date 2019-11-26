@@ -32,8 +32,11 @@
         <activity android:name=".HomeActivity"/>
         <activity android:name=".ShareActivity"/>
         <activity android:name=".PuzzleActivity2"/>
+        <activity android:name=".ViewRegistrations"/>
         <activity android:name=".PuzzleActivity3"/>
         <activity android:name=".ThankYou"/>
+        <activity android:name=".AdminhomeActivity"/>
+        <activity android:name=".RegisterEvent"/>
         <activity android:name=".CropPrediction"/>
         <activity android:name=".PredictResult"/>
         <activity android:name=".Detailsdb"/>

@@ -4,28 +4,38 @@
     android:layout_height="match_parent">
 
     <EditText
+        android:layout_below="@+id/item_name"
         android:id="@+id/item_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Time"
+        android:hint="Description"
         android:layout_margin="15dp"
         android:textSize="20sp"
         android:gravity="start"/>
     <EditText
-        android:layout_below="@+id/item_description"
-        android:id="@+id/item_price"
+        android:id="@+id/item_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Price"
+        android:hint="Event Name"
         android:layout_margin="15dp"
         android:textSize="20sp"
         />
+    <EditText
+        android:layout_below="@+id/item_description"
+        android:id="@+id/item_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:gravity="start"/>
+
     <Button
-        android:layout_below="@+id/item_price"
+        android:layout_below="@+id/item_date"
         android:id="@+id/add_event_button"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="ADD ITEM"
+        android:text="ADD EVENT"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"/>
 

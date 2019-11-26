@@ -33,23 +33,26 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.FarmerViewhold
     public FarmerViewholder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.card_layout,null);
-        rent = (Button) view.findViewById(R.id.rent);
+        //rent = (Button) view.findViewById(R.id.rent);
         return new FarmerViewholder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull FarmerViewholder farmerViewholder, int i) {
-        Farmers items = my_items.get(i);
+        final Farmers items = my_items.get(i);
 
         farmerViewholder.title.setText(items.getName());
         farmerViewholder.desc.setText(items.getDesc());
+        farmerViewholder.date.setText(items.getDate());
 
-        Picasso.get().load(items.getUrl()).into(farmerViewholder.imageView);
+        //Picasso.get().load(items.getUrl()).into(farmerViewholder.imageView);
 
-        rent.setOnClickListener(new View.OnClickListener() {
+        farmerViewholder.register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(context,RegisterEvent.class);
+                intent.putExtra("name",items.getName());
+                context.startActivity(intent);
             }
         });
 
@@ -63,14 +66,19 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.FarmerViewhold
 
     class FarmerViewholder extends RecyclerView.ViewHolder {
 
-        ImageView imageView;
-        TextView title, desc , price;
+        //ImageView imageView;
+        TextView title, desc , date;
+        Button register;
 
         public FarmerViewholder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.imageView);
+            //imageView = itemView.findViewById(R.id.imageView);
             title = itemView.findViewById(R.id.textViewTitle);
             desc = itemView.findViewById(R.id.textViewShortDesc);
+            date = itemView.findViewById(R.id.textDate);
+            register = itemView.findViewById(R.id.register);
+
+
             //price = itemView.findViewById(R.id.textViewPrice);
         }
     }

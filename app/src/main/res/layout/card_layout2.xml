@@ -15,7 +15,7 @@
             android:padding="8dp">
 
             <TextView
-                android:id="@+id/textViewTitle"
+                android:id="@+id/person_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -26,10 +26,10 @@
                 android:textColor="#000000" />
 
             <TextView
-                android:id="@+id/textViewShortDesc"
+                android:id="@+id/person_usn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/textViewTitle"
+                android:layout_below="@id/person_name"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:text=""
@@ -37,10 +37,21 @@
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
 
             <TextView
-                android:id="@+id/textDate"
+                android:id="@+id/person_branch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/textViewShortDesc"
+                android:layout_below="@id/person_usn"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textStyle="bold"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/event_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/person_branch"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:text=""
@@ -48,16 +59,7 @@
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
 
 
-            <Button
-                android:textStyle="bold"
-                android:layout_marginTop="8dp"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:layout_toRightOf="@id/imageView"
-                android:layout_below="@id/textDate"
-                android:id="@+id/register"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Register"/>
+            
 
 
 

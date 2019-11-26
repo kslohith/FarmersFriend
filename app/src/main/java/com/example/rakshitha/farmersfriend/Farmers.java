@@ -3,13 +3,13 @@ package com.example.rakshitha.farmersfriend;
 import android.widget.Button;
 
 public class Farmers {
-    public String name,desc,price,url;
+    public String name,desc,date;
 
-    public Farmers(String name, String desc, String price, String url) {
+    public Farmers(String name, String desc,String date ) {
         this.name = name;
         this.desc = desc;
-        this.price = price;
-        this.url = url;
+        this.date = date;
+
     }
 
     public Farmers() {
@@ -24,11 +24,6 @@ public class Farmers {
         return desc;
     }
 
-    public String getPrice() {
-        return price;
-    }
+    public String getDate() { return date; }
 
-    public String getUrl() {
-        return url;
-    }
 }
