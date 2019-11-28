@@ -41,6 +41,7 @@
         <activity android:name=".PredictResult"/>
         <activity android:name=".Detailsdb"/>
         <activity android:name=".PuzzleActivity"/>
+        <activity android:name=".AdminLoginActivity"/>
     </application>
 
 </manifest>
